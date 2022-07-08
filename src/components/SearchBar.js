@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { fetchHeroes } from "../utils/utils";
 
-export default function SearchBar() {
+export default function SearchBar({ setter }) {
 	let input = useRef("");
 
 	const handleClick = async (e) => {
